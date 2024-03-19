@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Producto</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/resgistrarProducto.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Sistemas POS: SurtiPan </h1>
+            <img src="img/logo.jpg" alt="logo">
+        </div>
+    </header>
+    <nav>
+        <div class="barraNav">
+            <div id="nombreUsuario">
+                <h4>Nombre de Usuario</h4>
+            </div>
+            <div id="busqueda">
+                <label for="">Buscar: </label>
+                <input type="search" name="barraBusqueda" id="barraBusqueda">
+            </div>
+            <div id="volver">
+                <a href="index.html">Volver</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="ingresar">
+            <div class="titular">
+                <h2>Ingresar Producto</h2>
+            </div>
+            <div class="formulario"> 
+                <form>
+                    <div>
+                        <div>
+                            <h3>Producto</h3>
+                            <input type="text" name="producto" id="producto" placeholder="Queso" required>
+                        </div>
+                        <div>   
+                            <h3>Codigo de referencia</h3>
+                            <input type="number" name="codigoReferencia" id="codigoReferencia" placeholder="13450048" required>
+                        </div>
+                        <div>
+                            <h3>Categoria</h3>
+                            <fieldset>
+                                <div>
+                                    <input type="radio" name="categoria" id="alimentos" value="alimentos" required>
+                                    <label for="alimentos">Alimentos</label>
+
+                                    <input type="radio" name="categoria" id="aseo" value="aseo" required> 
+                                    <label for="aseo">Aseo</label>
+                                    
+                                    <input type="radio" name="categoria" id="bebidas" value="bebidas" required>
+                                    <label for="bebidas">Bebidas</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <h3>Fecha de registro</h3>
+                            <input type="date" name="fechaRegistro" id="fechaRegistro" required>
+                        </div>
+                        <div>
+                            <h3>Unidades</h3>
+                            <input type="number" name="unidades" id="unidades" placeholder="5" required>
+                        </div>
+                    </div>
+                    <button type="submit">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h5>Este es un ejercicio de practica para la evidencia de Maquetacion en HTML</h5>
+        </div> 
+    </footer>
+</body>
+</html>

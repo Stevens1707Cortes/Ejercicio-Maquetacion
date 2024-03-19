@@ -1,0 +1,33 @@
+
+nav{
+    margin: auto;
+    width: 90%;
+    background-color: aqua;
+}
+
+.barraNav{
+    width: fit-content;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+#nombreUsuario{
+    margin-left: 2em;
+}
+#busqueda{
+    margin-left: 25em;
+}
+#volver{
+    margin-left: 25em;
+}
+
+#volver a{
+    color: red;
+    text-decoration: none;
+}
