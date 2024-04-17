@@ -1,12 +1,13 @@
 
 nav{
     margin: auto;
-    width: 90%;
+    width: 70%;
     background-color: aqua;
+    overflow-x: auto;
 }
 
 .barraNav{
-    width: fit-content;
+    width:fit-content;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -18,16 +19,47 @@ nav{
 }
 
 #nombreUsuario{
-    margin-left: 2em;
+    margin-left: 8em;
 }
 #busqueda{
-    margin-left: 25em;
+    margin-left: 8em;
 }
 #volver{
-    margin-left: 25em;
+    margin-left: 8em;
+    margin-right: 10em;
 }
 
 #volver a{
     color: red;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1024px) {
+    nav {
+        width: 75%; 
+    }
+
+    #nombreUsuario{
+        margin-left: 8em;
+    }
+    #busqueda,
+    #volver {
+        margin-left: 3em; 
+    }
+}
+
+@media screen and (max-width: 716px) {
+    
+    nav {
+        width: 80%; 
+    }
+
+    #nombreUsuario{
+        margin-left: 2.5em;
+    }
+    #busqueda,
+    #volver {
+        margin-left: 0.8em; 
+    }
+}
+
